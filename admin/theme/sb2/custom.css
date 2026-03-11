@@ -1,0 +1,36 @@
+/* 1) Sidebar normal un pelín más ancho (para que entre mejor) */
+.sidebar{
+  width: 15rem !important;   /* SB Admin 2 suele ser 14rem */
+}
+
+/* 2) Evitar que los textos se corten: permitir salto de línea */
+.sidebar .nav-item .nav-link{
+  white-space: normal !important;
+}
+
+.sidebar .nav-item .nav-link span{
+  display: inline-block;
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow: visible !important;
+  line-height: 1.15;
+}
+
+/* 3) Sidebar colapsado: más ancho y legible */
+body.sidebar-toggled .sidebar,
+.sidebar.toggled{
+  width: 9rem !important;    /* compacto pero se lee */
+}
+
+body.sidebar-toggled .sidebar .nav-item .nav-link,
+.sidebar.toggled .nav-item .nav-link{
+  width: 9rem !important;
+}
+
+body.sidebar-toggled .sidebar .nav-item .nav-link span,
+.sidebar.toggled .nav-item .nav-link span{
+  display: block;
+  font-size: .75rem;
+  white-space: normal !important;
+  word-break: break-word !important;
+}
