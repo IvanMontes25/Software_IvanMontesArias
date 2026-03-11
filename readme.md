@@ -29,7 +29,9 @@ gymbodytraining
 
 - Importar el archivo:
 core/bootstrap.php
- 
+
+- Importar el archivo JSON (n8n):
+- 
 Abrir el sistema en el navegador
 
 http://localhost/GymBodyTrainingEST
